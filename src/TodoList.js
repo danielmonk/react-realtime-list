@@ -44,6 +44,8 @@ export const TodoList = (uuid) => {
                           if (t.id === task.id) {
                             tasks[i].complete = !task.complete
                             return true
+                          } else {
+                            return false
                           }
                         })
                         setTasks([...tasks])
