@@ -23,12 +23,9 @@ const Home = (props) => {
     return (
       <div className="container">
         <div className="section">
-          <h1>Collaborative Task Lists</h1>
-          <small>
-            Powered by <a href="https://danielmonk.io">danielmonk</a>
-          </small>
+          <h1>React Realtime Lists</h1>
         </div>
-        <div className="section">
+        <div className="section list-wrapper">
           <button
             onClick={() => {
               newList(history)
@@ -39,6 +36,11 @@ const Home = (props) => {
         </div>
         <div className="section build">
         </div>
+        <footer>
+        <small className="powered-by">
+          Powered by <a href="https://danielmonk.io">danielmonk</a>
+        </small>
+        </footer>
       </div>
     )
   }
