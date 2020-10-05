@@ -42,7 +42,7 @@ export const useStore = (props) => {
       }
     }
     handleAsync()
-  }, [newTask, tasks])
+  }, [newTask])
 
   useEffect(() => {
     if (!taskListener && list) {

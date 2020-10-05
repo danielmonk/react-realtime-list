@@ -24,9 +24,6 @@ const Home = (props) => {
       <div className="container">
         <div className="section">
           <h1>Collaborative Task Lists</h1>
-          <small>
-            Powered by <a href="https://danielmonk.io">danielmonk</a>
-          </small>
         </div>
         <div className="section">
           <button
@@ -39,6 +36,11 @@ const Home = (props) => {
         </div>
         <div className="section build">
         </div>
+        <footer>
+        <small className="powered-by">
+          Powered by <a href="https://danielmonk.io">danielmonk</a>
+        </small>
+        </footer>
       </div>
     )
   }
@@ -60,4 +62,3 @@ render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister()
-
