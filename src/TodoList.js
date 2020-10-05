@@ -10,7 +10,7 @@ export const TodoList = (uuid) => {
       <div className="container">
         <Link to="/" className="back"><button className="back">Back</button></Link>
         <h1 className="section">My Task List</h1>
-        <div className="section">
+        <div className="section sharing">
           <label>Sharing url: </label>
           <input className="right" type="text" readOnly value={window.location.href} />
         </div>
@@ -33,11 +33,11 @@ export const TodoList = (uuid) => {
             </button>
           </form>
         </div>
-        <div className="section">
+        <div className="section wrap">
           {tasks
             ? tasks.map((task) => {
                 return (
-                  <div key={task.id} className={'field-row'}>
+                  <div key={task.id} className={'field-row list-item'}>
                     <input
                       checked={task.complete ? true : ''}
                       onChange={(e) => {
